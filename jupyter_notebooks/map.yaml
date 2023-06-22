@@ -1,4 +1,4 @@
-image: /home/ubuntu/turtlebot3_ws/src/jupyter_notebooks/map.pgm
+image: /home/ubuntu/turtlebot3_ws/src/jupyter_notebooks/rviz_screenshot_2023_06_22-23_11_30.png
 mode: trinary
 resolution: 0.05
 origin: [-1.27, -2.43, 0]
