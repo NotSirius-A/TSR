@@ -1,7 +1,7 @@
 image: /home/ubuntu/turtlebot3_ws/src/jupyter_notebooks/OMyGot3.pgm
 mode: trinary
-resolution: 0.009
-origin: [-3.25, -4.19, 0]
+resolution: 0.0085
+origin: [-4.75, -4.69, 0]
 negate: 0
 occupied_thresh: 0.65
 free_thresh: 0.25
