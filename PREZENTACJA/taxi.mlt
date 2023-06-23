@@ -4,8 +4,8 @@
   <playlist id="main_bin">
     <property name="xml_retain">1</property>
   </playlist>
-  <producer id="black" in="00:00:00.000" out="00:03:27.300">
-    <property name="length">00:03:27.317</property>
+  <producer id="black" in="00:00:00.000" out="00:03:24.483">
+    <property name="length">00:03:24.500</property>
     <property name="eof">pause</property>
     <property name="resource">0</property>
     <property name="aspect_ratio">1</property>
@@ -14,7 +14,7 @@
     <property name="set.test_audio">0</property>
   </producer>
   <playlist id="background">
-    <entry producer="black" in="00:00:00.000" out="00:03:27.300"/>
+    <entry producer="black" in="00:00:00.000" out="00:03:24.483"/>
   </playlist>
   <chain id="chain0" title="Shotcut version 23.06.14" out="00:04:21.233">
     <property name="length">00:04:21.250</property>
@@ -86,9 +86,9 @@
     <entry producer="chain0" in="00:00:23.400" out="00:01:45.617"/>
     <entry producer="chain1" in="00:01:56.233" out="00:03:21.617"/>
     <entry producer="chain2" in="00:03:30.033" out="00:03:44.283"/>
-    <entry producer="chain3" in="00:03:55.833" out="00:04:21.233"/>
+    <entry producer="chain3" in="00:03:55.833" out="00:04:18.417"/>
   </playlist>
-  <tractor id="tractor0" title="Shotcut version 23.06.14" in="00:00:00.000" out="00:03:27.300">
+  <tractor id="tractor0" title="Shotcut version 23.06.14" in="00:00:00.000" out="00:03:24.483">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">0</property>
