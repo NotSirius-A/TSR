@@ -5,10 +5,11 @@ services:
         volumes:
             - ./jupyter_notebooks:/home/ubuntu/turtlebot3_ws/src/jupyter_notebooks
             - ./world:/opt/ros/foxy/share/turtlebot3_gazebo/models/turtlebot3_world
+            - ./robot:/opt/ros/foxy/share/turtlebot3_gazebo/models/turtlebot3_waffle_pi
         ports: 
             - 6080:80
             - 8888:8888
-        shm_size: '2gb'
+        shm_size: '4gb'
         container_name: ros_fun
         command: "bash -i /home/ubuntu/run_jupyter.sh"
     
