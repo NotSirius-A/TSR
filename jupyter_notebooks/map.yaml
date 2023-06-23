@@ -1,6 +1,6 @@
-image: /home/ubuntu/turtlebot3_ws/src/jupyter_notebooks/RVIZBETTER.pgm
+image: /home/ubuntu/turtlebot3_ws/src/jupyter_notebooks/OMyGot3.pgm
 mode: trinary
-resolution: 0.0085
+resolution: 0.009
 origin: [-3.25, -4.19, 0]
 negate: 0
 occupied_thresh: 0.65
