@@ -143,31 +143,30 @@
 Stworzyliśmy system robotyczny, który zarządza robotyczną taksówką. System wspiera kolejkowanie zadań. Dodatkowo, wykonaliśmy mapę, po której robot porusza się w symulacji. Jej zadaniem jest odwzorowanie miejskiego środowiska, w którym robot mógłby się znaleźć w rzeczywistosci. 
 
 
-\clearpage\newpage
+\vsp
 \section{Mapa}
 
-\TODO
-
-Napisałbym, że 1 iteracja mapy była zbyt powtarzalna i robot sie gubił, i że użyliśmy programu cartographer
-
+Zbudowaliśmy mapę w Gazebo, a następnie uruchomiliśmy program \texttt{cartographer}, który wygenerował model mapy do Rvizz. Niestety ten model miał drobne błędy i nieregularności, więć użyliśmy programu do edycji zdjęć i wyczyściliśmy model do Rvizz. Warto zaznaczyć, że na początku zbudowaliśmy bardzo powtarzalną mapę z samych prostopadłościanów, ale robot na niej się gubił, ponieważ wiele miejsc wyglądało bardzo podobnie z perspektywy robota. Rozwiązaliśmy ten problem dodając dużo więcej różnych kształtów (punktów orientacyjnych). 
+ 
+\vsp\vsp
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[height=8.5cm]{./images/mapa1.png}
-    \caption{Widok mapy w rzuty izometrycznego}
+    \includegraphics[height=11cm]{./images/mapa1.png}
+    \caption{Widok mapy w rzucie izometrycznym}
 \end{figure}
 
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[height=8.5cm]{./images/mapa2.png}
+    \includegraphics[height=9.5cm]{./images/mapa2.png}
     \caption{Inny rzut izometryczny}
 \end{figure}
 
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[height=8.5cm]{./images/rviz.png}
+    \includegraphics[height=9.5cm]{./images/rviz.png}
     \caption{Model mapy do nawigacji w Rvizz}
 \end{figure}
 
