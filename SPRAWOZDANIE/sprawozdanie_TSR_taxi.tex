@@ -146,9 +146,15 @@ Stworzyliśmy system robotyczny, który zarządza robotyczną taksówką. System
 \vsp
 \section{Mapa}
 
-Zbudowaliśmy mapę w Gazebo, a następnie uruchomiliśmy program \texttt{cartographer}, który wygenerował model mapy do Rvizz. Niestety ten model miał drobne błędy i nieregularności, więć użyliśmy programu do edycji zdjęć i wyczyściliśmy model do Rvizz. Warto zaznaczyć, że na początku zbudowaliśmy bardzo powtarzalną mapę z samych prostopadłościanów, ale robot na niej się gubił, ponieważ wiele miejsc wyglądało bardzo podobnie z perspektywy robota. Rozwiązaliśmy ten problem dodając dużo więcej różnych kształtów (punktów orientacyjnych). 
+Zbudowaliśmy mapę w Gazebo, a następnie uruchomiliśmy program \texttt{cartographer}, który wygenerował model mapy do Rvizz. Niestety ten model miał drobne błędy i nieregularności, więć użyliśmy programu do edycji zdjęć i wyczyściliśmy model do Rvizz. Warto zaznaczyć, że na początku zbudowaliśmy bardzo powtarzalną mapę z samych prostopadłościanów, ale robot na niej się gubił. Bez charakterystycznych elementów robot napotykając róg mapy mylił go z rogiem wgłebienia, przez oprogramowanie odpowiedzielne za skalowanie obiektów myliło się i wyolbrzymiało wgłębienia (niezależnie od tego czy widziało dwie ściany czy nie. Program uznawał, że wgłębiene jest na całą mapę). Długość poszczególnych bloków też ma znaczenie. Gdy robot jeździł wzdłuż ściany bez dodatkówych bodźców to znowu zaczynał nadinterpretowywać długość korytarza. Rozwiązaliśmy ten problem dodając dużo więcej różnych kształtów (punktów orientacyjnych). Możliwe, że taki probelm występuje tylko i wyłącznie w symulacji i przy wprowadzeniu robota do świata rzeczywistego, nie występowałboby takie zjawisko. W świecie rzeczywistym jednak występują takie "urozmaicenia" krajobrazu jak ławki, latarnie, różne kształy i odległości bloków.
  
 \vsp\vsp
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[height=9cm]{./images/RVIZOMAP.png}
+    \caption{Mapa prototyp}
+\end{figure}
 
 \begin{figure}[!htb]
     \centering
@@ -197,8 +203,8 @@ self.tables = {
             BoolFieldSQLite(name="in_progress", null=False, default=0),
             BoolFieldSQLite(name="timestamp", null=False),
             IntegerFieldSQLite(name="x", null=False),
-            IntegerFieldSQLite(name="y", null=False),
             IntegerFieldSQLite(name="z", null=False),
+            IntegerFieldSQLite(name="y", null=False),
         ]),
 }
 
