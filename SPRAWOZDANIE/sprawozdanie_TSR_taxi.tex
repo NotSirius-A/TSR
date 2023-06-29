@@ -221,7 +221,7 @@ SELECT * FROM schedules WHERE is_completed=0 AND in_progress=0 ORDER BY timestam
 \newpage
 \subsubsection*{Back-end}
 
-Wydawanie komend akcji \texttt{navigate\_to\_pose} zaimplementowaliśmy za pomocą timera, który co jedną sekundę wykonuje zapytanie do bazy danych. Baza danych odpowiada lista zadań, które robot ma wykonać a program decyduję, które zadanie mu przydzielić. Po wykonaniu zadania robot zgłasza koniec akcji, co w programie powoduje wykonanie kodu, który dokonuje odpowiednich zmian w bazie danych.
+Wydawanie rozkazów typu \texttt{navigate\_to\_pose} zaimplementowaliśmy za pomocą timera, który co jedną sekundę wykonuje zapytanie do bazy danych. Baza danych odpowiada listą zadań, które robot ma wykonać, a program decyduje, które zadanie mu przydzielić. Po wykonaniu zadania robot zgłasza koniec akcji, co w programie powoduje wykonanie kodu, który dokonuje odpowiednich zmian w bazie danych.
 
 \vsp
 
@@ -258,7 +258,6 @@ def read_db(self):
         cursor = s.conn.cursor()
         rows = cursor.execute("SELECT * FROM schedules WHERE is_completed=0 AND in_progress=0 ORDER BY timestamp").fetchall()
 
-        print(rows)
 
     if len(rows) > 0 and not self.is_robot_busy:
         navigate_pose_goal = NavigateToPose.Goal()    
@@ -272,7 +271,8 @@ def read_db(self):
 
         self.goal_id = rows[0]["id"]
 
-        goal_future_pose = navigate_action.send_goal_async(navigate_pose_goal,feedback_callback=self.print_feedback_goal)
+        goal_future_pose = navigate_action.send_goal_async(navigate_pose_goal, feedback_callback=self.print_feedback_goal)
+
         goal_future_pose.add_done_callback(self.received_task)
 
 
@@ -297,7 +297,7 @@ def read_db(self):
 \newpage
 \subsubsection*{Front-end}
 
-Aplikacja front-end pozwala użytkownikowi komunikować się z robotem. Aplikacja opiera się na interaktywnych komórkach Jupyter Notebook, w których użytkownik musi wpisać miejsce do, którego robot ma się udać. W rzeczywistosci mogłoby to wyglądać w następujący sposób. Użytkownik w aplikacji mobilnej wpisuje, gdzie się aktualnie znajduję, robot do niego przyjeżdża. Następnie po wejściu do taksówki użytkownik wpisuje w aplikacji dokąd chcę jechać, a robot taxi go tam zabiera.
+Aplikacja front-end pozwala użytkownikowi komunikować się z robotem. Aplikacja opiera się na interaktywnych komórkach Jupyter Notebook, w których użytkownik musi wpisać miejsce do, którego robot ma się udać. W rzeczywistosci mogłoby to wyglądać w następujący sposób. Użytkownik w aplikacji mobilnej wpisuje, gdzie się aktualnie znajduje, robot do niego przyjeżdża. Następnie po wejściu do taksówki użytkownik wpisuje w aplikacji dokąd chcę jechać, a robot taxi go tam zabiera.
 
 \vsp\vsp
 

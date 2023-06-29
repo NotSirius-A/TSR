@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.18)  29 JUN 2023 19:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.18)  29 JUN 2023 19:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1078,12 +1078,7 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) [4
 
-] [5]
-Overfull \hbox (78.52538pt too wide) in paragraph at lines 275--276
-[][][][][][][][][][][][][]  
- []
-
-[6]
+] [5] [6]
 <./images/interact.png, id=185, 1139.75812pt x 395.22656pt>
 File: ./images/interact.png Graphic file (type png)
 <use ./images/interact.png>
@@ -1096,13 +1091,13 @@ Package rerunfilecheck Info: File `sprawozdanie_TSR_taxi.out' has not changed.
 Here is how much of TeX's memory you used:
  61783 strings out of 475385
  1545696 string characters out of 2776906
- 2483444 words of memory out of 3000000
+ 2482444 words of memory out of 3000000
  82181 multiletter control sequences out of 15000+600000
  526130 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,7n,103p,835b,2028s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/fgrzy/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/fgrzy/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/fgrzy/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/fgrzy/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/fgrzy/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/fgrzy/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/fgrzy/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/fgrzy/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/fgrzy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/avantgar/uagd8a.pfb><C:/Users/fgrzy/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on sprawozdanie_TSR_taxi.pdf (8 pages, 653123 bytes).
+Output written on sprawozdanie_TSR_taxi.pdf (8 pages, 653131 bytes).
 PDF statistics:
  263 PDF objects out of 1000 (max. 8388607)
  108 named destinations out of 1000 (max. 500000)
